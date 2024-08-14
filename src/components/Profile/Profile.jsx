@@ -11,23 +11,23 @@ export default function Profile({
 }) {
   return (
     <div className={css.container}>
-      <div>
-        <img src={avatar} alt={username} />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+      <div className={css.profile}>
+        <img className={css.avatar} src={avatar} alt={username} />
+        <p className={css.username}>{username}</p>
+        <p className={css.userdata}>@{tag}</p>
+        <p className={css.userdata}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={css.box}>
+        <li className={css.stats}>
           <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
+        <li className={css.stats}>
           <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
+        <li className={css.stats}>
           <span>Likes</span>
           <span>{likes}</span>
         </li>
